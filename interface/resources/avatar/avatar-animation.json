@@ -4497,6 +4497,117 @@
                                                                                                         },
                                                                                                         "id": "reactionPoint",
                                                                                                         "type": "blendLinear"
+                                                                                                    },
+                                                                                                    {
+                                                                                                        "children": [
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                ],
+                                                                                                                "data": {
+                                                                                                                    "endFrame": 210,
+                                                                                                                    "loopFlag": false,
+                                                                                                                    "mirrorFlag": false,
+                                                                                                                    "startFrame": 1,
+                                                                                                                    "timeScale": 1,
+                                                                                                                    "url": "qrc:///avatar/animations/emote_react01.fbx"
+                                                                                                                },
+                                                                                                                "id": "reactionNeutralHop",
+                                                                                                                "type": "clip"
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                ],
+                                                                                                                "data": {
+                                                                                                                    "endFrame": 210,
+                                                                                                                    "loopFlag": false,
+                                                                                                                    "mirrorFlag": false,
+                                                                                                                    "startFrame": 1,
+                                                                                                                    "timeScale": 1,
+                                                                                                                    "url": "qrc:///avatar/animations/emote_react02.fbx"
+                                                                                                                },
+                                                                                                                "id": "reactionNeutralPoint",
+                                                                                                                "type": "clip"
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                ],
+                                                                                                                "data": {
+                                                                                                                    "endFrame": 210,
+                                                                                                                    "loopFlag": false,
+                                                                                                                    "startFrame": 1,
+                                                                                                                    "timeScale": 1,
+                                                                                                                    "url": "qrc:///avatar/animations/emote_react03.fbx"
+                                                                                                                },
+                                                                                                                "id": "reactionNeutralHorns",
+                                                                                                                "type": "clip"
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "children": [
+                                                                                                                ],
+                                                                                                                "data": {
+                                                                                                                    "endFrame": 210,
+                                                                                                                    "loopFlag": false,
+                                                                                                                    "startFrame": 1,
+                                                                                                                    "timeScale": 1,
+                                                                                                                    "url": "qrc:///avatar/animations/emote_react04.fbx"
+                                                                                                                },
+                                                                                                                "id": "reactionNeutralGuns",
+                                                                                                                "type": "clip"
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "data": {
+                                                                                                            "currentState": "reactionNeutralHop",
+                                                                                                            "randomSwitchTimeMax": 10,
+                                                                                                            "states": [
+                                                                                                                {
+                                                                                                                    "easingType": "easeInOutQuad",
+                                                                                                                    "id": "reactionNeutralHop",
+                                                                                                                    "interpDuration": 1,
+                                                                                                                    "interpTarget": 1,
+                                                                                                                    "interpType": "evaluateBoth",
+                                                                                                                    "priority": 1,
+                                                                                                                    "resume": false,
+                                                                                                                    "transitions": [
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "easingType": "easeInOutQuad",
+                                                                                                                    "id": "reactionNeutralPoint",
+                                                                                                                    "interpDuration": 1,
+                                                                                                                    "interpTarget": 1,
+                                                                                                                    "interpType": "evaluateBoth",
+                                                                                                                    "priority": 1,
+                                                                                                                    "resume": false,
+                                                                                                                    "transitions": [
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "easingType": "easeInOutQuad",
+                                                                                                                    "id": "reactionNeutralHorns",
+                                                                                                                    "interpDuration": 1,
+                                                                                                                    "interpTarget": 1,
+                                                                                                                    "interpType": "evaluateBoth",
+                                                                                                                    "priority": 1,
+                                                                                                                    "resume": false,
+                                                                                                                    "transitions": [
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "easingType": "easeInOutQuad",
+                                                                                                                    "id": "reactionNeutralGuns",
+                                                                                                                    "interpDuration": 1,
+                                                                                                                    "interpTarget": 1,
+                                                                                                                    "interpType": "evaluateBoth",
+                                                                                                                    "priority": 1,
+                                                                                                                    "resume": false,
+                                                                                                                    "transitions": [
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ],
+                                                                                                            "triggerTimeMin": 1
+                                                                                                        },
+                                                                                                        "id": "reactionNeutral",
+                                                                                                        "type": "randomSwitchStateMachine"
                                                                                                     }
                                                                                                 ],
                                                                                                 "data": {
@@ -4516,6 +4627,10 @@
                                                                                                                 {
                                                                                                                     "state": "reactionNegative",
                                                                                                                     "var": "reactionNegativeTrigger"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
                                                                                                                 },
                                                                                                                 {
                                                                                                                     "state": "reactionRaiseHand",
@@ -4563,6 +4678,10 @@
                                                                                                                     "var": "reactionNegativeTrigger"
                                                                                                                 },
                                                                                                                 {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
+                                                                                                                },
+                                                                                                                {
                                                                                                                     "state": "reactionRaiseHand",
                                                                                                                     "var": "reactionRaiseHandEnabled"
                                                                                                                 },
@@ -4600,6 +4719,10 @@
                                                                                                                     "var": "negativeDropHeadOnDone"
                                                                                                                 },
                                                                                                                 {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
+                                                                                                                },
+                                                                                                                {
                                                                                                                     "state": "reactionRaiseHand",
                                                                                                                     "var": "reactionRaiseHandEnabled"
                                                                                                                 },
@@ -4627,6 +4750,10 @@
                                                                                                                 {
                                                                                                                     "state": "reactionPositive",
                                                                                                                     "var": "reactionPositiveTrigger"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
                                                                                                                 },
                                                                                                                 {
                                                                                                                     "state": "idleTalkOverlay",
@@ -4658,6 +4785,10 @@
                                                                                                                     "var": "reactionPositiveTrigger"
                                                                                                                 },
                                                                                                                 {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
+                                                                                                                },
+                                                                                                                {
                                                                                                                     "state": "reactionRaiseHand",
                                                                                                                     "var": "reactionRaiseHandEnabled"
                                                                                                                 },
@@ -4687,6 +4818,10 @@
                                                                                                                     "var": "reactionPositiveTrigger"
                                                                                                                 },
                                                                                                                 {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
+                                                                                                                },
+                                                                                                                {
                                                                                                                     "state": "reactionRaiseHand",
                                                                                                                     "var": "reactionRaiseHandEnabled"
                                                                                                                 },
@@ -4697,6 +4832,51 @@
                                                                                                                 {
                                                                                                                     "state": "idleTalkOverlay",
                                                                                                                     "var": "reactionPointDisabled"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "easingType": "easeInOutQuad",
+                                                                                                            "id": "reactionNeutral",
+                                                                                                            "interpDuration": 5,
+                                                                                                            "interpTarget": 5,
+                                                                                                            "interpType": "snapshotPrev",
+                                                                                                            "transitions": [
+                                                                                                                {
+                                                                                                                    "state": "reactionPositive",
+                                                                                                                    "var": "reactionPositiveTrigger"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "idleTalkOverlay",
+                                                                                                                    "var": "reactionNeutralHopOnDone"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "idleTalkOverlay",
+                                                                                                                    "var": "reactionNeutralPointOnDone"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "idleTalkOverlay",
+                                                                                                                    "var": "reactionNeutralHornsOnDone"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "idleTalkOverlay",
+                                                                                                                    "var": "reactionNeutralGunsOnDone"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionNegative",
+                                                                                                                    "var": "reactionNegativeTrigger"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionRaiseHand",
+                                                                                                                    "var": "reactionRaiseHandEnabled"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionApplaud",
+                                                                                                                    "var": "reactionApplaudEnabled"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionPoint",
+                                                                                                                    "var": "reactionPointEnabled"
                                                                                                                 }
                                                                                                             ]
                                                                                                         }

@@ -2012,6 +2012,12 @@ void Rig::updateReactions(const ControllerParameters& params) {
         _animVars.set("reactionNegativeTrigger", false);
     }
 
+    if (params.reactionTriggers[AVATAR_REACTION_NEUTRAL]) {
+        _animVars.set("reactionNeutralTrigger", true);
+    } else {
+        _animVars.set("reactionNeutralTrigger", false);
+    }
+
     // begin end reactions
     bool enabled = params.reactionEnabledFlags[AVATAR_REACTION_RAISE_HAND];
     _animVars.set("reactionRaiseHandEnabled", enabled);

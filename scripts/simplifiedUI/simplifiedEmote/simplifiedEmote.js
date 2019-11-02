@@ -449,6 +449,7 @@ function onMessageFromEmoteAppBar(message) {
             if (!message.data.isPressingAndHolding) {
                 return;
             }
+            // triggerReactionWrapper("neutral");
             toggleEmojiApp();
             break;
         default:
@@ -759,6 +760,7 @@ function onMessageFromEmojiApp(message) {
     switch (message.method) {
         case "selectedEmoji":
             selectedEmoji(message.code);
+            triggerReactionWrapper("neutral");
             break;
         default:
             console.log("Unrecognized message from " + EMOJI_APP_MESSAGE_SOURCE + ": " + JSON.stringify(message));

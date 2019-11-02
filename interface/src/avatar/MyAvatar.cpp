@@ -136,7 +136,8 @@ QString userRecenterModelToString(MyAvatar::SitStandModelType model) {
 
 static const QStringList TRIGGER_REACTION_NAMES = {
     QString("positive"),
-    QString("negative")
+    QString("negative"),
+    QString("neutral")
 };
 
 static const QStringList BEGIN_END_REACTION_NAMES = {

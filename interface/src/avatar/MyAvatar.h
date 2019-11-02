@@ -2988,7 +2988,7 @@ private:
     QScriptEngine* _scriptEngine { nullptr };
     bool _needToSaveAvatarEntitySettings { false };
 
-    bool _reactionTriggers[NUM_AVATAR_TRIGGER_REACTIONS] { false, false };
+    bool _reactionTriggers[NUM_AVATAR_TRIGGER_REACTIONS] { false, false, false };
     int _reactionEnabledRefCounts[NUM_AVATAR_BEGIN_END_REACTIONS] { 0, 0, 0 };
 
     mutable std::mutex _reactionLock;
