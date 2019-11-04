@@ -4504,7 +4504,7 @@
                                                                                                                 "children": [
                                                                                                                 ],
                                                                                                                 "data": {
-                                                                                                                    "endFrame": 210,
+                                                                                                                    "endFrame": 105,
                                                                                                                     "loopFlag": false,
                                                                                                                     "mirrorFlag": false,
                                                                                                                     "startFrame": 1,
@@ -4518,7 +4518,7 @@
                                                                                                                 "children": [
                                                                                                                 ],
                                                                                                                 "data": {
-                                                                                                                    "endFrame": 210,
+                                                                                                                    "endFrame": 105,
                                                                                                                     "loopFlag": false,
                                                                                                                     "mirrorFlag": false,
                                                                                                                     "startFrame": 1,
@@ -4532,7 +4532,7 @@
                                                                                                                 "children": [
                                                                                                                 ],
                                                                                                                 "data": {
-                                                                                                                    "endFrame": 210,
+                                                                                                                    "endFrame": 105,
                                                                                                                     "loopFlag": false,
                                                                                                                     "startFrame": 1,
                                                                                                                     "timeScale": 1,
@@ -4545,7 +4545,7 @@
                                                                                                                 "children": [
                                                                                                                 ],
                                                                                                                 "data": {
-                                                                                                                    "endFrame": 210,
+                                                                                                                    "endFrame": 105,
                                                                                                                     "loopFlag": false,
                                                                                                                     "startFrame": 1,
                                                                                                                     "timeScale": 1,
@@ -4865,6 +4865,10 @@
                                                                                                                 {
                                                                                                                     "state": "reactionNegative",
                                                                                                                     "var": "reactionNegativeTrigger"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "state": "reactionNeutral",
+                                                                                                                    "var": "reactionNeutralTrigger"
                                                                                                                 },
                                                                                                                 {
                                                                                                                     "state": "reactionRaiseHand",
@@ -5698,6 +5702,10 @@
                                                                                                         {
                                                                                                             "state": "idle",
                                                                                                             "var": "reactionNegativeTrigger"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "state": "idle",
+                                                                                                            "var": "reactionNeutralTrigger"
                                                                                                         },
                                                                                                         {
                                                                                                             "state": "idle",
